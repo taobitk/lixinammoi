@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lì Xì Thần Tài AI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              'tet': ['"Dancing Script"', 'cursive'],
+              'body': ['"Nunito"', 'sans-serif'],
+            },
+            colors: {
+              'tet-red': '#D90429',
+              'tet-dark-red': '#8D0801',
+              'tet-gold': '#FFD700',
+              'tet-yellow': '#F4D35E',
+            },
+            animation: {
+              'shake-hard': 'shake-hard 0.5s cubic-bezier(.36,.07,.19,.97) infinite',
+              'bounce-slow': 'bounce 3s infinite',
+              'glow': 'glow 2s ease-in-out infinite alternate',
+              'pop-in': 'pop-in 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards',
+            },
+            keyframes: {
+              'shake-hard': {
+                '0%, 100%': { transform: 'translate3d(0, 0, 0) rotate(0deg)' },
+                '10%, 30%, 50%, 70%, 90%': { transform: 'translate3d(-4px, 0, 0) rotate(-5deg)' },
+                '20%, 40%, 60%, 80%': { transform: 'translate3d(4px, 0, 0) rotate(5deg)' },
+              },
+              'glow': {
+                'from': { boxShadow: '0 0 10px #fff, 0 0 20px #fff, 0 0 30px #FFD700' },
+                'to': { boxShadow: '0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #FFD700' },
+              },
+              'pop-in': {
+                '0%': { opacity: '0', transform: 'scale(0.5)' },
+                '100%': { opacity: '1', transform: 'scale(1)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #8D0801;
+        background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239b2226' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.4",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.41.0",
+    "lucide-react": "https://esm.sh/lucide-react@^0.564.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="font-body text-gray-100 overflow-x-hidden">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
